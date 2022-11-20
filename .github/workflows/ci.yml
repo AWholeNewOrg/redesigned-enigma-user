@@ -1,0 +1,14 @@
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-20.04
+    name: ci
+    steps:
+      - name: Use v1
+        uses: AWholeNewOrg/redesigned-enigma@v1
+      - name: Use v1.0.0
+        uses: AWholeNewOrg/redesigned-enigma@v1.0.0
+
